@@ -1,0 +1,78 @@
+body, html {
+    margin: 0px;
+    padding: 0px;
+
+    width: 100%;
+    height: 100%;
+}
+
+#loading {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    #logo {
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+        img {
+            position: absolute;
+
+            width: 300px;
+            height: 300px;
+
+            left: 50%;
+            top: 50%;
+    
+            transform: translate(-50%, -50%);
+        }
+        z-index: 4;
+    }
+
+    #background {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+
+        div {
+            overflow:hidden;
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+
+            background-color: rgba(18, 11, 56, 0.61);
+        }
+
+        img {
+            min-width: 100%;
+        }
+
+        .bg-1, .bg-2, .bg-3 {
+            float: left;
+        }
+
+        .bg-1 {
+            width: 40%;
+            height: 40%;
+        }
+
+        .bg-2 {
+            width: 60%;
+            height: 40%;
+        }
+
+        .bg-3 {
+            width: 100%;
+            height: 60%;
+        }
+    }
+}
